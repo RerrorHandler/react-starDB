@@ -1,4 +1,3 @@
-
 import React, {Component} from 'react';
 
 import Header from '../header';
@@ -75,17 +74,9 @@ export default class App extends Component{
                     <StarshipDetails itemId={5} />
                     <PlanetDetails itemId={9} />
 
-                    <PersonList>
-                        { ({name}) => <span>{name}</span> }
-                    </PersonList>
-
-                    <StarshipList>
-                        { ({name}) => <span>{name}</span> }
-                    </StarshipList>
-
-                    <PlanetList>
-                        { ({name}) => <span>{name}</span> }
-                    </PlanetList>
+                    <PersonList />
+                    <StarshipList />
+                    <PlanetList />
 
                     {/*<ItemList
                         getData={getAllPlanets}
